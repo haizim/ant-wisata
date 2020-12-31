@@ -1,6 +1,6 @@
 # ant-wisata
 
-##Cara menjalankan
+## Cara menjalankan
 
 - buka matlab
 - buka direktori
