@@ -6,3 +6,4 @@
 - buka direktori
 - Jalankan dengan perintah
 `gui`
+- Pilih
