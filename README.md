@@ -7,3 +7,4 @@
 - Jalankan dengan perintah
 `gui`
 - Pilih
+- Klik tombol "Urutkan Rute"
