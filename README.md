@@ -12,6 +12,8 @@
 - Maka rute yang disarankan akan muncul di bagian kanan 
 
 ## ScreenShot
-| Pertama kali dijalankan | Hasil Rekomendasi |
-| --------- | --------- |
-| ![Pertama dijalankan](ant-blank.png) | ![Operasi dijalankan](ant-run.png) |
+
+### Pertama kali dijalankan
+![Pertama dijalankan](ant-blank.png)
+### Hasil rekomendasi
+![Operasi dijalankan](ant-run.png)
