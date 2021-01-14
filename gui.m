@@ -22,7 +22,7 @@ function varargout = gui(varargin)
 
 % Edit the above text to modify the response to help gui
 
-% Last Modified by GUIDE v2.5 11-Dec-2018 07:50:16
+% Last Modified by GUIDE v2.5 11-Dec-2018 20:49:59
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -369,10 +369,9 @@ set(handles.text20,'String','');
 axes(handles.axes1);
 cla reset;
 hold on
-%plot('');
 hold off
 
-chk1 = get(handles.checkbox1, 'Value');
+chk1=get(handles.checkbox1,'Value');
 chk2=get(handles.checkbox2,'Value');
 chk3=get(handles.checkbox3,'Value');
 chk4=get(handles.checkbox4,'Value');
@@ -398,9 +397,14 @@ chk20=get(handles.checkbox20,'Value');
 if chk1 == 1
     n=n+1;
     m=m+1;
-    x(n) = -8.025436;
-    y(n) = 112.949195;
+    x(n) = -8.013414;
+    y(n) = 112.889817;
     urutan(n) = 1;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Taman Nasional Bromo Tengger Semeru', x(n), y(n)-0.15);
+    text(x(n), y(n)-0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 % Gunung Api Semeru
@@ -410,6 +414,11 @@ if chk2 == 1
     x(n) = -8.089830;
     y(n) = 113.079630;
     urutan(n) = 2;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Gunung Semeru', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 % Kawah Ijen
@@ -419,6 +428,11 @@ if chk3 == 1
     x(n) = -8.066375;
     y(n) = 114.234811;
     urutan(n) = 3;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Kawah Ijen', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 % Candi Borobudur
@@ -428,6 +442,11 @@ if chk4 == 1
     x(n) = -8.201090;
     y(n) = 111.088387;
     urutan(n) = 4;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Candi Borobudur', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Gunung Bromo
@@ -437,6 +456,11 @@ if chk5 == 1
     x(n) = -7.671000;
     y(n) = 112.897500;
     urutan(n) = 5;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Gunung Bromo', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Batu Secret Zoo (Jawa Timur Park 2)
@@ -446,6 +470,11 @@ if chk6 == 1
     x(n) = -7.886890;
     y(n) = 112.530340;
     urutan(n) = 6;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Batu Secret Zoo', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Taman Patung NuArt
@@ -455,6 +484,11 @@ if chk7 == 1
     x(n) = -6.877131;
     y(n) = 107.572626;
     urutan(n) = 7;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Taman Patung NuArt', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Candi Prambanan
@@ -464,6 +498,11 @@ if chk8 == 1
     x(n) = -7.711280;
     y(n) = 110.595670;
     urutan(n) = 8;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Candi Prambanan', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Museum Batik Danar Hadi
@@ -473,6 +512,11 @@ if chk9 == 1
     x(n) = -7.567540;
     y(n) = 110.813360;
     urutan(n) = 9;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Museum Batik Danar Hadi', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Gunung Penanjakan
@@ -482,6 +526,11 @@ if chk10 == 1
     x(n) = -7.910030;
     y(n) = 112.943800;
     urutan(n) = 10;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Gunung Penanjakan', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Air Terjun Madakaripura
@@ -491,6 +540,11 @@ if chk11 == 1
     x(n) = -7.682860;
     y(n) = 112.546220;
     urutan(n) = 11;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Air Terjun Madakaripura', x(n), y(n)-0.15);
+    text(x(n), y(n)-0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Pantai Sukamade
@@ -500,6 +554,11 @@ if chk12 == 1
     x(n) = -8.561179;
     y(n) = 113.884370;
     urutan(n) = 12;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Pantai Sukamade', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Gunung Sikunir
@@ -509,6 +568,11 @@ if chk13 == 1
     x(n) = -7.233710;
     y(n) = 109.934900;
     urutan(n) = 13;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Gunung Sikunir', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Batu Ratapan Angin
@@ -518,6 +582,11 @@ if chk14 == 1
     x(n) = -7.350370;
     y(n) = 109.906189;
     urutan(n) = 14;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Batu Ratapan Angin', x(n), y(n)-0.15);
+    text(x(n), y(n)-0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Museum Ullen Sentalu
@@ -527,6 +596,11 @@ if chk15 == 1
     x(n) = -7.597648;
     y(n) = 110.423397;
     urutan(n) = 15;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Museum Ullen Sentalu', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Goa Jomblang
@@ -536,6 +610,11 @@ if chk16 == 1
     x(n) = -8.028628;
     y(n) = 110.638242;
     urutan(n) = 16;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Goa Jomblang', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Gereja Ganjuran
@@ -545,6 +624,11 @@ if chk17 == 1
     x(n) = -7.926277;
     y(n) = 110.319309;
     urutan(n) = 17;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Gereja Ganjuran', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Pantai Timang
@@ -554,6 +638,11 @@ if chk18 == 1
     x(n) = -8.175705;
     y(n) = 110.663230;
     urutan(n) = 18;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Pantai Timang', x(n), y(n)-0.15);
+    text(x(n), y(n)-0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Masjid Al-Akbar
@@ -563,6 +652,11 @@ if chk19 == 1
     x(n) = -7.268491;
     y(n) = 112.741278;
     urutan(n) = 19;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Masjid Al-Akbar', x(n), y(n)+0.15);
+    text(x(n), y(n)+0.15, labelstr,'FontSize',7);
+    hold off
 end
 
 %Museum Angkut
@@ -572,6 +666,12 @@ if chk20 == 1
     x(n) = -7.880440;
     y(n) = 112.508850;
     urutan(n) = 20;
+    axes(handles.axes1);
+    hold on
+    labelstr = sprintf('Museum Angkut', x(n), y(n)-0.15);
+    text(x(n), y(n)-0.15, labelstr,'FontSize',7);
+    hold off
+    
 end
 
 n
@@ -581,9 +681,7 @@ y
 urutan
 
 miter=100;
-mulai = get(handles.popupmenu1,'Value');
-awal = find(urutan==mulai);
-awal
+
 % parameters
 e=.15;            % evaporation coefficient.
 alpha=1;          % effect of ants' sight.
@@ -598,7 +696,6 @@ for i=1:n
         latlon1=[x(i) y(i)];
         latlon2=[x(i) y(j)];
         [d(i,j) d2km]=lldistkm(latlon1,latlon2);
-        %d(i,j)=sqrt((x(i)-x(j))^2+(y(i)-y(j))^2);
     end
 end
 d=d
@@ -624,6 +721,10 @@ h=h
 %     generated and use of the solution quality in
 %     determining the quantity of pheromone to deposit-->calculate_cost
 % -------------------------------------------------------------------------
+%define first position
+mulai = get(handles.popupmenu1,'Value');
+awal = find(urutan==mulai);
+awal
 for i=1:miter
 % Step 1: Forward ants and solution construction
 % Generate first position places
@@ -632,90 +733,142 @@ for w=1:n
 end
 % Step 2:probabilistic solution contruction   
     [tour]=ant_tour(str_plcs,m,n,h,t,alpha,beta);
+    tour1=tour
     tour=horzcat(tour,tour(:,1));
-    %tr = tour
+    tour2=tour
     
-% Step 3: Calculate the cost --> total distace
+% Step 3: Calculate the cost --> total distance
     [cost,f]=calculate_cost(m,n,d,tour,el);
     [t]=update_the_trace(m,n,t,tour,f,e);
     average_cost(i)=mean(cost);
-    %acs = average_cost
+    average_cost
     
 % Step 4: Determine the best route
     [min_cost(i),best_index]=min(cost);
     besttour(i,:)=tour(best_index,:);
     iteration(i)=i;
+    besttour
 end
 str_plcs
+
+% Show the cities's order
+for i=1:(n+1)
+  urut(i) = besttour(1,i); 
+end
+urut
+for j=1:n
+   urutan_tempat = urutan(urut(j));
+   tmpt = nama_tempat(urutan_tempat);
+   urutan
+   tmpt
+   switch j
+    case 1
+        nomor = '1. ';
+        tempat = [nomor tmpt];
+        set(handles.text1,'String',tempat);
+    case 2
+        nomor = '2. ';
+        tempat = [nomor tmpt];
+        set(handles.text2,'String',tempat);
+    case 3
+        nomor = '3. ';
+        tempat = [nomor tmpt];
+        set(handles.text3,'String',tempat);
+    case 4
+        nomor = '4. ';
+        tempat = [nomor tmpt];
+        set(handles.text4,'String',tempat);
+    case 5
+        nomor = '5. ';
+        tempat = [nomor tmpt];
+        set(handles.text5,'String',tempat);
+    case 6
+        nomor = '6. ';
+        tempat = [nomor tmpt];
+        set(handles.text6,'String',tempat);
+    case 7
+        nomor = '7. ';
+        tempat = [nomor tmpt];
+        set(handles.text7,'String',tempat);
+    case 8
+        nomor = '8. ';
+        tempat = [nomor tmpt];
+        set(handles.text8,'String',tempat);
+    case 9
+        nomor = '9. ';
+        tempat = [nomor tmpt];
+        set(handles.text9,'String',tempat);
+    case 10
+        nomor = '10. ';
+        tempat = [nomor tmpt];
+        set(handles.text10,'String',tempat);
+    case 11
+        nomor = '11. ';
+        tempat = [nomor tmpt];
+        set(handles.text11,'String',tempat);
+    case 12
+        nomor = '12. ';
+        tempat = [nomor tmpt];
+        set(handles.text12,'String',tempat);
+    case 13
+        nomor = '13. ';
+        tempat = [nomor tmpt];
+        set(handles.text13,'String',tempat);
+    case 14
+        nomor = '14. ';
+        tempat = [nomor tmpt];
+        set(handles.text14,'String',tempat);
+    case 15
+        nomor = '15. ';
+        tempat = [nomor tmpt];
+        set(handles.text15,'String',tempat);
+    case 16
+        nomor = '16. ';
+        tempat = [nomor tmpt];
+        set(handles.text16,'String',tempat);
+    case 17
+        nomor = '17. ';
+        tempat = [nomor tmpt];
+        set(handles.text17,'String',tempat);
+    case 18
+        nomor = '18. ';
+        tempat = [nomor tmpt];
+        set(handles.text18,'String',tempat);
+    case 19
+        nomor = '19. ';
+        tempat = [nomor tmpt];
+        set(handles.text19,'String',tempat);
+    case 20
+        nomor = '20. ';
+        tempat = [nomor tmpt];
+        set(handles.text20,'String',tempat);
+   end
+end
+
 % Plot the best route
 [k,l]=min(min_cost);
 for i=1:n+1
     X(i)=x(besttour(l,i));
     Y(i)=y(besttour(l,i));
 end
+%X
+%Y
 axes(handles.axes1);
 %plotmf(a,'input',1);
 hold on
+xlim([min(x)-0.1 max(x)+0.3]);
+ylim([min(y)-0.5 max(y)+0.3]);
 plot(X,Y,'--o',...
                 'MarkerEdgeColor','k',...
-                'MarkerFaceColor','g',...
-                'MarkerSize',3)
-xlabel('x (km)');ylabel('y (km)');
-title(['minimum cost (total length(km))= ',num2str(k)]);
+                'MarkerFaceColor','y',...
+                'MarkerSize',5)
+plot(X(1),Y(1),'--o',...
+                'MarkerEdgeColor','k',...
+                'MarkerFaceColor','c',...
+                'MarkerSize',5)
+xlabel('latitude (km)');ylabel('longitude (km)');
+title(['minimum cost (total length)= ',num2str(k),' km']);
 hold off
-
-% Show the cities's order
-for i=1:(n+1)
-  urut(i) = tour(1,i); 
-end
-urut
-for j=1:n
-    urutan_tempat = urutan(urut(j));
-   tempat = nama_tempat(urutan_tempat);
-   tempat
-   switch j
-    case 1
-        set(handles.text1,'String',tempat);
-    case 2
-        set(handles.text2,'String',tempat);
-    case 3
-        set(handles.text3,'String',tempat);
-    case 4
-        set(handles.text4,'String',tempat);
-    case 5
-        set(handles.text5,'String',tempat);
-    case 6
-        set(handles.text6,'String',tempat);
-    case 7
-        set(handles.text7,'String',tempat);
-    case 8
-        set(handles.text8,'String',tempat);
-    case 9
-        set(handles.text9,'String',tempat);
-    case 10
-        set(handles.text10,'String',tempat);
-    case 11
-        set(handles.text11,'String',tempat);
-    case 12
-        set(handles.text12,'String',tempat);
-    case 13
-        set(handles.text13,'String',tempat);
-    case 14
-        set(handles.text14,'String',tempat);
-    case 15
-        set(handles.text15,'String',tempat);
-    case 16
-        set(handles.text16,'String',tempat);
-    case 17
-        set(handles.text17,'String',tempat);
-    case 18
-        set(handles.text18,'String',tempat);
-    case 19
-        set(handles.text19,'String',tempat);
-    case 20
-        set(handles.text20,'String',tempat);
-   end
-end
 % -------------------------------------------------------------------------
 % handles    structure with handles and user data (see GUIDATA)
 
