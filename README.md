@@ -10,3 +10,7 @@
 - Pilih lokasi pertama yang ingin dikunjungi
 - Klik tombol "Urutkan Rute"
 - Maka rute yang disarankan akan muncul di bagian kanan 
+
+#ScreenShot
+![Pertama dijalankan](ant-blank.png)
+![Operasi dijalankan](ant-run.png)
